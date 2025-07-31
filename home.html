@@ -19,9 +19,8 @@
         <div class="bg-black w-1/3 h-[33px] rounded-[33px] -mt-[230px]"></div>
         <div class="stats shadow mt-5">
           <div class="stat">
-            <div class="stat-title">Total Page Views</div>
+            <div class="stat-title">Account Balance</div>
             <div id="account-balance" class="stat-value">9400</div>
-            <div class="stat-desc">21% more than last month</div>
           </div>
         </div>
         <div class="divider"></div>
@@ -32,7 +31,10 @@
         </div>
         <!-- features ends -->
         <div class="divider"></div>
-        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+        <!-- add money form starts -->
+        <div
+          class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+        >
           <div class="card-body">
             <fieldset class="fieldset">
               <label class="label">Amount</label>
@@ -59,10 +61,41 @@
             </fieldset>
           </div>
         </div>
+        <!-- add money form ends -->
+        <!-- cash out form starts -->
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <div class="card-body">
+            <fieldset class="fieldset">
+              <label class="label">Cash Out Amount</label>
+              <input
+                id="input-cash-out"
+                type="text"
+                class="input border-2 border-gray-200"
+                placeholder="Cash Out Amount"
+              />
+              <label class="label">Pin</label>
+              <input
+                id="input-cash-out-pin"
+                type="password"
+                autocomplete="off"
+                class="input border-2 border-gray-200"
+                placeholder="Pin Number"
+              />
+              <button
+                id="btn-cash-out"
+                class="bg-blue-700 btn btn-neutral mt-4 text-white"
+              >
+                Cash Out
+              </button>
+            </fieldset>
+          </div>
+        </div>
+        <!-- cash out form ends -->
       </div>
     </main>
 
     <script src="./js/utilities2.js"></script>
     <script src="./js/addMoney2.js"></script>
+    <script src="./js/cashOut.js"></script>
   </body>
 </html>
