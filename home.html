@@ -44,7 +44,7 @@
         <!-- add money form starts -->
         <div
           id="add-money-form"
-          class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+          class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
         >
           <div class="card-body">
             <fieldset class="fieldset">
@@ -76,7 +76,7 @@
         <!-- cash out form starts -->
         <div
           id="cash-out-form"
-          class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+          class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
         >
           <div class="card-body">
             <fieldset class="fieldset">
@@ -106,8 +106,9 @@
         </div>
         <!-- cash out form ends -->
         <!-- transaction starts -->
-        <div id="transaction-section">
-          <h2 class="text-5xl text-center">Transactions History</h2>
+        <div id="transaction-section" class="hidden">
+          <h2 class="text-3xl text-center">Transactions History</h2>
+          <div id="transaction-container"></div>
         </div>
         <!-- transaction ends -->
       </div>
